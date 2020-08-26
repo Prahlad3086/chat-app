@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/favicon.png">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Chat App</title>
 </head>
@@ -32,7 +32,7 @@
                 <span class="message__name p-2  text-dark bg-light rounded-pill border border-danger">{{username}}</span>
                 <span class="message__meta text-primary text-light bg-dark rounded p-1">{{createdAt}}</span>
             </p>
-            <p class="p-1 text-light bg-color rounded-lg">{{message}}</p>
+            <p class="p-1 text-light bg-color">{{message}}</p>
         </div>
     </script>
     <script id="location-message-template" type="text/html">
@@ -45,7 +45,7 @@
         </div>
     </script>
     <script id="sidebar-template" type="text/html">
-        <h2 class="room-title text-capitalize text-success border border-info rounded">Room - {{room}}</h2>
+        <h2 class="room-title text-capitalize text-success border border-info rounded">{{room}}</h2>
         <h3 class="list-title">USERS</h3>
         <ul class="users list-group">
             {{#users}}
