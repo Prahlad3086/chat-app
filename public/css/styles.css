@@ -39,7 +39,7 @@ input {
 
 button {
     cursor: pointer;
-    padding: 12px;
+    padding: 0px 12px;
     background: #7C5CBF;
     border: none;
     color: white;
@@ -92,8 +92,8 @@ button:disabled {
 .chat__sidebar {
     height: 100vh;
     color: white;
-    background: #333744;
-    width: 225px;
+    background:url(../img/sidebar.jpg);
+    width: 180px;
     overflow-y: scroll
 }
 
@@ -101,6 +101,8 @@ button:disabled {
 
 .chat__main {
     flex-grow: 1;
+    width: 400px;
+    background-image: url('../img/background.jpg');
     display: flex;
     flex-direction: column;
     max-height: 100vh;
@@ -115,7 +117,11 @@ button:disabled {
 /* Message Styles */
 
 .message {
-    margin-bottom: 16px;   
+    margin-bottom: 16px;
+}
+
+.bg-color{
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .message__name {
@@ -129,17 +135,13 @@ button:disabled {
     font-size: 14px;
 }
 
-.message a {
-    color: #0070CC;
-}
-
 /* Message Composition Styles */
 
 .compose {
     display: flex;
     flex-shrink: 0;
     margin-top: 16px;
-    padding: 24px;
+    padding: 24px; 
 }
 
 .compose form {
@@ -152,12 +154,14 @@ button:disabled {
     border: 1px solid #eeeeee;
     width: 100%;
     padding: 12px;
-    margin: 0 16px 0 0;
+    margin: 0;
     flex-grow: 1;
+    border-radius: 5px 10px;
 }
 
 .compose button {
     font-size: 14px;
+    border-radius: 5px 10px;
 }
 
 /* Chat Sidebar Styles */
@@ -178,6 +182,7 @@ button:disabled {
 
 .users {
     list-style-type: none;
-    font-weight: 300;
+    font-weight: 600;
     padding: 12px 24px 0 24px;
+    color: #4f4de7;
 }

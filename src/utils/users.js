@@ -20,7 +20,7 @@ const addUser = ({ id, username, room })=>{
     })
 
     //Validate username
-    if(existingUser){
+    if(existingUser || username === 'admin-prahlad'){
         return {
             error: 'This Username is already in use. Try different one!'
         }
